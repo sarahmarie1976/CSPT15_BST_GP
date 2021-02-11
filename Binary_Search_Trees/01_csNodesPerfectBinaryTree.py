@@ -10,6 +10,6 @@ D - h^2 - 1 where h is the height of the binary tree
 
 answer is :
 
-log_2(h + 1 ) where h is the height of the binary tree
+2^h + 1 where h is the height of the binary tree
 
 """
