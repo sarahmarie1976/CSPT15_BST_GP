@@ -11,5 +11,5 @@ D - it has slower lookups than a sorted array
 
 the answer is:
 
-
+the performance degrades if it becomes unbalanced
 """
