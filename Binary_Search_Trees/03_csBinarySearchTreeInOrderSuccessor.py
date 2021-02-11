@@ -10,6 +10,6 @@ D - the node that has the next highest value
 
 answer is :
 
-
+the node that has the next highest value
 
 """

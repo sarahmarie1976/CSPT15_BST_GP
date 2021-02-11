@@ -64,3 +64,22 @@ An array that contains the values at t's nodes, ordered as described above.
 #     self.right = None
 def traverseTree(t):
 
+    if t is None:
+        return []
+
+    result = [] # final holder
+    queue = [] # intermediate holder
+    queue.append(t)
+
+    while len(queue) != 0:
+        node = queue.pop(0)
+        result.append(node.value)
+
+        if node.left is not None:
+            queue.append(node.left)
+
+        if node.right is not None:
+            queue.append(node.right)
+
+    return result
+

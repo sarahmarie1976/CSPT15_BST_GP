@@ -27,5 +27,20 @@ Output: [2,4,3]
 #     self.left = None
 #     self.right = None
 def binaryTreeInOrderTraversal(root):
+    # define some helper function that we will use inside our traversal code
+    def inorder_helper(root, res):
+        # go to till you find the leaf
+        if root is None:
+            return
+        inorder_helper(root.left, res)
+        res.append(root.value)
+        inorder_helper(root.right, res)
+
+    # store our result        
+    result = []
+    # pass in out root and result to the helper function
+    inorder_helper(root, result)
+    # after all of the calls to our helper fn are finished we can return our results
+    return result
 
 

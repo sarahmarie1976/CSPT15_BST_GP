@@ -64,3 +64,61 @@ The root-to-leaf paths, sorted by the leaves in the order that they appear in th
 #     self.right = None
 def treePaths(t):
 
+    # if the tree is empty
+    if not t:
+        #return empty
+        return []
+    
+    def Tpaths(node, path, res):
+        # if node is None
+        if not node:
+            # return result
+            return res
+
+        # if left and right is None
+        if not node.left and not node.right:
+            # append to result
+            res.append(path)
+            # return result
+            return res
+        
+        # if there is still left node
+        if node.left:
+            # call Tree_paths and print value at node
+            Tpaths(node.left, path+f"->{node.left.value}", res)
+
+        # if there is still a right node
+        if node.right:
+            # call Tree_path and print value at node
+            Tpaths(node.right, path+f"->{node.right.value}", res)
+            
+        return res
+    
+    return Tpaths(t, f"{t.value}", [])
+    
+
+
+t = {
+    "value": 5,
+    "left": {
+        "value": 2,
+        "left": {
+            "value": 10,
+            "left": None,
+            "right": None
+        },
+        "right": {
+            "value": 4,
+            "left": None,
+            "right": None
+        }
+    },
+    "right": {
+        "value": -3,
+        "left": None,
+        "right": None
+    }
+}
+
+print(treePaths(t))
+

@@ -27,3 +27,11 @@ your function should return its minimum depth = 2.
 #     self.right = None
 def minimumDepthBinaryTree(root):
 
+    if root is None:
+        return 0
+    else:
+        return 1 + min(
+            minimumDepthBinaryTree(root.left),
+            minimumDepthBinaryTree(root.right)
+        )
+
