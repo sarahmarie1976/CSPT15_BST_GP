@@ -30,8 +30,7 @@ def minimumDepthBinaryTree(root):
     if root is None:
         return 0
     else:
-        return 1 + min(
-            minimumDepthBinaryTree(root.left),
-            minimumDepthBinaryTree(root.right)
-        )
+        return 1 + min(minimumDepthBinaryTree(root.left),
+minimumDepthBinaryTree(root.right))
 
+# Only gets 4 out of 5 test to pass
