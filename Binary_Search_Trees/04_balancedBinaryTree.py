@@ -39,7 +39,32 @@ return False.
 #     self.value = x
 #     self.left = None
 #     self.right = None
+class Tree(object):
+  def __init__(self, x):
+    self.value = x
+    self.left = None
+    self.right = None
+
 def balancedBinaryTree(root):
+
+    def get_height(root):
+
+        # Case at Root
+        if root is None:
+            return 0
+
+        # we traverse down the left and right sides
+        left_height = get_height(root.left)
+        right_height = get_height(root.right)
+        
+        # the tree is not balanced, one side is longer than the other
+        if left_height < 0 or right_height < 0 or abs(left_height - right_height) > 1:
+            return -1
+
+        # the tree is balanced
+        return max(left_height, right_height) + 1
+
+    return (get_height(root) >= 0)
 
 
 

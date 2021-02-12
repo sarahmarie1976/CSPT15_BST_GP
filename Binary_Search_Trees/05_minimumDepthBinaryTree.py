@@ -25,13 +25,25 @@ your function should return its minimum depth = 2.
 #     self.value = x
 #     self.left = None
 #     self.right = None
-def minimumDepthBinaryTree(root):
+# def minimumDepthBinaryTree(root):
 
+#     if root is None:
+#         return 0
+#     else:
+#         return 1 + min(minimumDepthBinaryTree(root.left),
+# minimumDepthBinaryTree(root.right))
+
+# Only gets 4 out of 5 test to pass
+
+# the correct answer below 
+
+def minimumDepthBinaryTree(root):
     if root is None:
         return 0
-    else:
-        return 1 + min(
-            minimumDepthBinaryTree(root.left),
-            minimumDepthBinaryTree(root.right)
-        )
-
+    if root.left is None and root.right is None:
+        return 1
+    if root.left is None:
+        return minimumDepthBinaryTree(root.right) + 1
+    if root.right is None:
+        return minimumDepthBinaryTree(root.left) + 1
+    return min(minimumDepthBinaryTree(root.left), minimumDepthBinaryTree(root.right)) + 1
