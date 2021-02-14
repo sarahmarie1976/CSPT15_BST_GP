@@ -9,7 +9,7 @@ D - Queue
 
 answer is :
 
-
+Stack
 
 
 

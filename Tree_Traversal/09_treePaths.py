@@ -120,5 +120,5 @@ t = {
     }
 }
 
-print(treePaths(t))
+print(t)
 

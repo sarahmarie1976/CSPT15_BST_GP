@@ -18,7 +18,8 @@ D - 1- Leaf-First
 
   answer is :
 
-
+1- Depth-First
+2- Breadth-First
 
   
 """
