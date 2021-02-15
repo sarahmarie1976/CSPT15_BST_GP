@@ -13,6 +13,9 @@ F - None of the above
 
 Answer is :
 
+Inorder
+Preorder
+PostOrder
 
 
 """

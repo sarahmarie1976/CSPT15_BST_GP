@@ -33,4 +33,9 @@ F - 1. Visit node
 
     answer is :
 
+    1. Go to the left subtree
+    2. Go to the right subtree
+    3. Visit node
+
+
 """
