@@ -69,6 +69,7 @@ def treePaths(t):
         #return empty
         return []
     
+    
     def Tpaths(node, path, res):
         # if node is None
         if not node:
@@ -120,5 +121,5 @@ t = {
     }
 }
 
-print(t)
+print(treePaths(t))
 
