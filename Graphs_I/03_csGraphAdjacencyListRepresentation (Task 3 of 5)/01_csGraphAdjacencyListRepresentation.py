@@ -54,6 +54,19 @@ D -  class Graph:
 
 
 
-            ANSWER IS:                  
+            ANSWER IS:  
+
+
+            class Graph:
+        def __init__(self):
+            self.vertices = {
+                "A": {"B": 1},
+                "B": {"C": 3, "D": 2, "E": 1},
+                "C": {"E": 4},
+                "D": {"E": 2},
+                "E": {"F": 3},
+                "F": {},
+                "G": {"D": 1}
+            }                
 
 """
