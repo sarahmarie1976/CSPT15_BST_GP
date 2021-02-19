@@ -7,11 +7,11 @@ B - Directed graphs best represent relationships that cna be described as "mutua
 
 C - Directed graphs and undirected graphs are only different if they have edge weights that are associated with them
 
-D - Directed graphs best represent relationships that can be described as "one way", while undirected graphs best represent relationships that can be described as "mutual exchanges"
+D - Directed graphs best represent relationships that can be described as "one way", while undirected graphs best represent relationships that can be described as "mutual exchanges"nver
 
 
 answer is:
 
-
+Directed graphs best represent relationships that can be described as "one way", while undirected graphs best represent relationships that can be described as "mutual exchanges"
 
 """
